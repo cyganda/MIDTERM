@@ -1,0 +1,49 @@
+<HTML> 
+<HEAD> 
+	<TITLE> MIDTERM </TITLE>
+	<style> 
+body {
+	background-color: #E0FFFF;
+	font-family: courier;
+}
+input[type=submit] {
+  background-color: #63D1F4;
+  border-radius: 40px;
+  padding: 12px;
+  color: red;
+  font-size: 16px;
+
+}
+</style>
+
+</HEAD>
+
+<BODY>
+
+	 Input Number:
+ 	 <input type="text" id="fbox"  name="fbox"><br><br>
+
+ 	 Input Number:
+ 	 <input type="text" id="sbox" name="sbox"><br><br>
+
+ 	Input Number:
+ 	 <input type="text" id="tbox" name="tbox"><br><br>
+
+ 	 <input type="Submit" value="Click Me" onclick="getVal()"> </input>
+
+<script>
+
+ function getVal() {
+		var f1 = document.getElementById('fbox').value;
+		var s2 = document.getElementById('sbox').value;
+		var t3 = document.getElementById('tbox').value;
+		for (var i = f1; i <= s2; i++)
+		{
+			document.write( i + " X " + t3 +" = "+i*t3 + "<br>");
+		}
+	}
+
+	</script>
+</BODY>
+
+</HTML>
